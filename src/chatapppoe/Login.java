@@ -16,4 +16,28 @@ package chatapppoe;
 
 public class Login {
     
+    // These variables store the user's registration information.
+    private String firstName;
+    private String lastName;
+    private String username;
+    private String password;
+    private String cellPhoneNumber;
+    
+    public Login(String firstName, String lastName, String username,
+        String password, String cellPhoneNumber) {
+
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.username = username;
+    this.password = password;
+    this.cellPhoneNumber = cellPhoneNumber;
+}
+    
+    public boolean checkUserName() {
+
+    // The username must contain an underscore
+    // and must not be longer than 5 characters.
+    return username.contains("_") && username.length() <= 5;
+}
+    
 }
