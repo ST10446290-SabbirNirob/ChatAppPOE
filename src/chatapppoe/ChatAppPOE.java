@@ -34,6 +34,7 @@ public class ChatAppPOE {
         // Display whether the username is valid.
         System.out.println(user.checkUserName());
         System.out.println(user.checkPasswordComplexity());
+        System.out.println(user.checkCellPhoneNumber());
     }
     
 }

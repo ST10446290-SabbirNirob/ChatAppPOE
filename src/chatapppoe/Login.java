@@ -7,6 +7,8 @@
  */
 package chatapppoe;
 
+import java.util.regex.Pattern;
+
 /**
  *
  * @author Sabbir Nirob ST10446290 sabbirnirob1000@gmail.com
@@ -71,5 +73,18 @@ public boolean checkPasswordComplexity() {
             && hasNumber
             && hasSpecialCharacter;
 }
+
+// Checks if the cellphone number uses the South African
+// international country code (+27) followed by 9 digits.
+//
+// Regex reference:
+// Oracle Java Pattern documentation:
+// https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/regex/Pattern.html
+public boolean checkCellPhoneNumber() {
+
+    String cellPhonePattern = "^\\+27\\d{9}$";
+
+    return Pattern.matches(cellPhonePattern, cellPhoneNumber);
+}    
     
 }
