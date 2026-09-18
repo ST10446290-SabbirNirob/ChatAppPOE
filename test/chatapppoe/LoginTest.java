@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Sabbir Nirob ST10446290 sabbirnirob1000@gmail.com
+ * @author Sabbir Nirob
  */
 //******************************************************************************
 public class LoginTest {

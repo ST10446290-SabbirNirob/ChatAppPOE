@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Sabbir Nirob ST10446290 sabbirnirob1000@gmail.com
+ * @author Sabbir Nirob
  */
 //******************************************************************************
 public class ChatAppPOE {
