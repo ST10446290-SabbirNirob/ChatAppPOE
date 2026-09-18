@@ -24,6 +24,9 @@ public class Login {
     private String username;
     private String password;
     private String cellPhoneNumber;
+    // Stores the username and password entered during login.
+    private String loginUsername;
+    private String loginPassword;
     
     public Login(String firstName, String lastName, String username,
         String password, String cellPhoneNumber) {
@@ -35,6 +38,16 @@ public class Login {
     this.cellPhoneNumber = cellPhoneNumber;
 }
     
+    // Stores the username entered during login.
+    public void setLoginUsername(String loginUsername) {
+    this.loginUsername = loginUsername;
+}
+
+    // Stores the password entered during login.
+    public void setLoginPassword(String loginPassword) {
+    this.loginPassword = loginPassword;
+}
+
     public boolean checkUserName() {
 
     // The username must contain an underscore
@@ -110,4 +123,22 @@ public String registerUser() {
     return "User registered successfully.";
 }
     
+    // Checks if the login details match the registered details.
+public boolean loginUser() {
+
+    return username.equals(loginUsername)
+            && password.equals(loginPassword);
+}
+
+    // Returns the correct message depending on the login result.
+public String returnLoginStatus() {
+
+    if (loginUser()) {
+        return "Welcome " + firstName + ", " + lastName
+                + " it is great to see you again.";
+    }
+
+    return "Username or password incorrect, please try again.";
+}
+
 }

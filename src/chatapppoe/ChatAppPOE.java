@@ -32,10 +32,11 @@ public class ChatAppPOE {
         );
 
         // Display whether the username is valid.
-        System.out.println(user.checkUserName());
-        System.out.println(user.checkPasswordComplexity());
-        System.out.println(user.checkCellPhoneNumber());
-        System.out.println(user.registerUser());
+        user.setLoginUsername("sab_1");
+        user.setLoginPassword("snfkjKNFAS172#");
+
+        System.out.println(user.loginUser());
+        System.out.println(user.returnLoginStatus());
     }
     
 }
