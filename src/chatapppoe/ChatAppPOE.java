@@ -35,6 +35,7 @@ public class ChatAppPOE {
         System.out.println(user.checkUserName());
         System.out.println(user.checkPasswordComplexity());
         System.out.println(user.checkCellPhoneNumber());
+        System.out.println(user.registerUser());
     }
     
 }
