@@ -40,4 +40,36 @@ public class Login {
     return username.contains("_") && username.length() <= 5;
 }
     
+    // Checks if the password meets all complexity requirements.
+public boolean checkPasswordComplexity() {
+
+    boolean hasCapitalLetter = false;
+    boolean hasNumber = false;
+    boolean hasSpecialCharacter = false;
+
+    // Check every character in the password.
+    for (int i = 0; i < password.length(); i++) {
+
+        char currentCharacter = password.charAt(i);
+
+        if (Character.isUpperCase(currentCharacter)) {
+            hasCapitalLetter = true;
+        }
+
+        if (Character.isDigit(currentCharacter)) {
+            hasNumber = true;
+        }
+
+        if (!Character.isLetterOrDigit(currentCharacter)) {
+            hasSpecialCharacter = true;
+        }
+    }
+
+    // Password must meet all four requirements.
+    return password.length() >= 8
+            && hasCapitalLetter
+            && hasNumber
+            && hasSpecialCharacter;
+}
+    
 }

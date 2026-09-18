@@ -27,12 +27,13 @@ public class ChatAppPOE {
                 "Test",
                 "User",
                 "sab_1",
-                "Password123!",
+                "snfkjKNFAS172#",
                 "+27908932444"
         );
 
         // Display whether the username is valid.
         System.out.println(user.checkUserName());
+        System.out.println(user.checkPasswordComplexity());
     }
     
 }
