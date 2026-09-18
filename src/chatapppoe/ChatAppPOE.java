@@ -13,9 +13,7 @@ import java.util.Scanner;
  *
  * @author Sabbir Nirob ST10446290 sabbirnirob1000@gmail.com
  */
-
 //******************************************************************************
-
 public class ChatAppPOE {
 
     /**
@@ -23,7 +21,7 @@ public class ChatAppPOE {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+
         // Scanner allows the user to enter information in the console.
         Scanner input = new Scanner(System.in);
 
@@ -124,5 +122,5 @@ public class ChatAppPOE {
 
         input.close();
     }
-    
+
 }
